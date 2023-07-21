@@ -1,0 +1,55 @@
+@import "../modulos/mixin";
+
+.maincontacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+form {
+    font-family: 'Lucida Sans', sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:  $color-fondo-textos;
+    border-radius: 5% ;
+    margin-bottom: 10px;
+    padding: 10px 50px 10px 50px;
+}
+
+.form-control {
+    width: 400px;
+}
+
+.framecontacto {
+    width: 600px;
+    height: 450px; 
+    border-radius: 5%;
+    margin: 10px;
+
+}
+
+.btnsform {
+    display: flex;
+
+}
+.botoncontacto {
+    @include btn-inicio;
+    position:static;
+    margin-bottom: 10px;
+
+    &:hover {border-color: white;}
+}
+.modal-content {
+    transform: translate(0px , 250px);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    background-color: $color-fondo-textos;
+}
+.btn-close {
+    --bs-btn-close-bg: url(https://clipground.com/images/white-x-png-5.png);
+}

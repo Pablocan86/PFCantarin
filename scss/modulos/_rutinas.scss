@@ -1,0 +1,38 @@
+
+.mainrutinas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    h2 {
+        background-color: $color-fondo-textos;
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 5%;
+        text-shadow: 5px 5px 5px gray;
+    }
+
+}
+
+.bodyrutinas {
+    display: grid;
+    grid-template-rows: 1, 0.2fr, repeat(1, 4fr) 0.2fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer";
+}
+.imgrutinas {
+    border-radius: 5%;
+}
+
+.carousel-inner {
+    position: relative;
+    left: 15%;
+    width: 70%;
+    overflow: hidden;
+}

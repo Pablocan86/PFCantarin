@@ -1,0 +1,51 @@
+@import "../modulos/mixin";
+
+
+// PANTALLA INICIO
+main {
+    background-image: url(../images/fondo_negro_10.webp);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    grid-area: main;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 0.25r, repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "mainp mainp"
+    "home1 home2"
+    "home3 home4";
+}
+
+.imagenesinicio {
+width: 450px;
+height: 300px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+
+.sectionhome1 {
+grid-area: home1;
+}
+
+.sectionhome2 {
+ grid-area: home2;
+}
+
+.sectionhome3 {
+grid-area: home3;
+}
+
+.sectionhome4 {
+grid-area: home4;
+}
+
+.botoninicio {
+@include btn-inicio;
+    &:hover {
+        border-color: white;
+    }
+}
+

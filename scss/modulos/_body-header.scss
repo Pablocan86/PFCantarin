@@ -1,0 +1,67 @@
+@import "../modulos/mixin";
+
+* {
+    @include reseteo-pagina
+}
+
+body { 
+    display: grid;
+    grid-template-rows: 3fr, repeat(2, 2fr), 0.5fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "main main"
+    "footer footer";}
+   
+header {   
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    grid-area: header;
+    
+    nav {
+        background-color: black;
+        grid-area: nav;  
+    }    
+
+}
+
+
+.imglogo {
+    width: 300px;
+    height: 150px;
+    padding-left: 20px;
+    object-fit:contain;
+}
+
+.navbar {
+    --bs-navbar-color: white;
+    --bs-navbar-hover-color: gray;
+    --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: rgb(255 254 254);
+    font-style: italic;
+    font-size: large;
+    text-shadow: 5px 10px 5px gray;
+}
+
+.nav-link {
+    font-weight: 600;
+}
+
+.bg-body-tertiary {
+    background-color: black!important;
+}
+
+.navbar-toggler {
+    background-color:rgb(255, 255, 255);    
+}
+
+
+
