@@ -1,1 +1,2 @@
-# PreEntrega3Cantarin
+En este proyecto se esta aplicando todo lo aprendido en el curso de Desarrollo Web de Coder House. Se ha utilizado HTML, CSS y SASS. En algunas partes de las página se utilizan componentes de Bootstrap. El layout principal de  cada página html esta confeccionado con grid, los ajustes de cada sección con flexbox y por útlimo algunos componentes de bootstrap como en el nav. 
+Este proyecto busca confeccionar una página para un grupo de personal trainers que se dedican a dar clases en el gimnasio, asesorias online y venta de rutinas preconfeccionadas. Luego se le agregará alguna tienda online.
