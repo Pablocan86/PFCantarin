@@ -492,7 +492,8 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
