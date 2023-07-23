@@ -2,52 +2,70 @@
 @import "../modulos/inicio";
 
 .mainservicios {
+    width: 100%;
+    background-color: black;
+    grid-area: main;
     color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-
-
+    font-family: "Quicksand-variables";
+    @include flexbox (column, wrap, center, center,);
+   
     section {
-    background-color: $color-fondo-textos;
-    margin: 10px;
-    border-radius: 5% ;
-    padding: 10px;
-    
+        
+        @include flexbox (row, wrap, space-around, center,);
+        border-radius: 10px;
+        margin: 10px;
+            
+        div {
+            width: 60%;
+            h2 {
+                color: $color-rojo-paleta;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                text-align: center;
+                font-weight: bold;
+            }  
 
-        h2 {
-        text-shadow: 5px 5px 5px gray;
-        text-align: center;
-
-        }  
-
-
-        p {
-        padding-left: 10px;
-        text-align: justify;
-        font-size: 18px;
-
+            p { 
+            padding-left: 10px;
+            text-align: justify;
+            font-size: 1.2rem;
+            }
+        }    
+        a {
+            background-color:$color-bordo-claro-paleta;
+            color: white;
+            border: 1px solid black;
+            text-decoration:none;
+            border-radius: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 15px 50px;
+            
+            
+            &:hover { 
+                  background-color: $color-gris-oscuro-paleta;
+                }
+            }   
         }
-
-        a {text-align: center;}
-
-        a button {
-            object-position: center;
-        }
-
     
     }
-}    
-.botonservicios {
-    @extend .botoninicio;
-    position:static;
-    
+
+    .sectionservicios1 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.788),rgba(0, 0, 0, 0.788)), url(../images/entrenamiento_presencial.jpg);
+        background-size:cover;
+    }
+    .sectionservicios2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.788),rgba(0, 0, 0, 0.788)), url(../images/entrenamiento_online.jpg);
+        background-size:cover;
+    }
+    .sectionservicios3 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.788),rgba(0, 0, 0, 0.788)), url(../images/tienda_de_rutinas_servicios.jpg);
+        background-size:cover;
+    }
+      
+// .botonservicios {
+//     @extend .botoninicio;
+//     position:static;
     
 
-
-}
 

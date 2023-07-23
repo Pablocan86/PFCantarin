@@ -1,51 +1,105 @@
 @import "../modulos/mixin";
 
-
 // PANTALLA INICIO
-main {
-    background-image: url(../images/fondo_negro_10.webp);
-    padding-top: 20px;
-    padding-bottom: 10px;
+.mainhome {
+    @include flexbox (column, wrap, center, center,);
+    font-family:"Quicksand-variables";
     grid-area: main;
-    justify-items: center;
-    align-items: center;
-    display: grid;
-    grid-template-rows: 0.25r, repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "mainp mainp"
-    "home1 home2"
-    "home3 home4";
-}
+    width: 100%;
+    height: 100%;
+    
+    .sectionhome1 {background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../images/mujer_gimnasio.jpg);
+        backface-visibility: hidden;
+        width: 100%;
+        background-size: cover;
+        
+        div {
+            @include flexbox (column, wrap, center, start,);
+            width: 400px;
+            height: 300px;
+            margin-top: 150px;
+            margin-left: 100px;
+            margin-bottom: 100px;
 
-.imagenesinicio {
-width: 450px;
-height: 300px;
-margin-top: 10px;
-margin-bottom: 10px;
-}
+            h2 {
+                color:white; 
+                font-size: 2.5rem; 
+                font-weight: bold;
+                letter-spacing: 0.5px;
+                word-spacing: 1px;  
+                margin-bottom: 30px; 
+            }    
+            p {
+                color:white;
+                font-size: 1.3rem;
+                margin-bottom: 30px;
+            }
 
-
-.sectionhome1 {
-grid-area: home1;
-}
-
-.sectionhome2 {
- grid-area: home2;
-}
-
-.sectionhome3 {
-grid-area: home3;
-}
-
-.sectionhome4 {
-grid-area: home4;
-}
-
-.botoninicio {
-@include btn-inicio;
-    &:hover {
-        border-color: white;
+            a {
+                background-color:$color-bordo-claro-paleta;
+                color: white;
+                border: 1px solid black;
+                text-decoration:none;
+                border-radius: 20px;
+                margin-top: 5px;
+                padding: 15px 25px;
+                
+                &:hover { 
+                      background-color: $color-gris-oscuro-paleta;
+      
+                 }
+            }   
+            
+        }
     }
+    
+    .sectionhome2 {
+        width: 100%;
+        @include flexbox (column, wrap, center, center,);
+        background-color: black;
+
+        .h2primerrenglon{ 
+            color: $color-grisclarisimo_paleta;  
+            margin-top: 30px; 
+            font-weight: bolder;
+
+        }
+        .h2segundorenglon {
+            color: $color-rojo-paleta;
+            margin-bottom: 50px;
+            letter-spacing: 10px;
+            font-weight: bolder;
+
+        }
+        p {
+            color: white;
+            font-size: 1rem;
+        }
+    }
+    .sectionhome3 {
+        @include flexbox (row, wrap, space-evenly, center,);
+        background-color: black;
+        width: 100%;
+        padding-bottom: 20px;
+
+        .divsection3 {
+            color: white;
+            width: 300px;
+            height:100%;
+
+            img {
+                width: 300px;
+                height: 300px;
+            }
+            
+            a {
+                color: $color-rojo-paleta;
+            }
+        }
+
+
+        
+    }
+
 }
 

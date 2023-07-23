@@ -1,4 +1,7 @@
-
+@font-face {    
+    font-family: "Quicksand-variables";
+    src: url(../fonts/Quicksand-VariableFont_wght.ttf);
+  }
 @import "../scss/modulos/variables";
 @import "../scss/modulos/mixin";
 @import "../scss/modulos/body-header";

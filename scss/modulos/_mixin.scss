@@ -17,3 +17,11 @@
     padding: 10px 10px;
     letter-spacing: 0.2cm;
 }
+
+@mixin flexbox ($direction, $wrap, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+}

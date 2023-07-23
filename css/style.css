@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Quicksand-variables";
+  src: url(../fonts/Quicksand-VariableFont_wght.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -41,11 +45,13 @@ header nav {
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: rgb(255, 254, 254);
   font-style: italic;
-  font-size: large;
-  text-shadow: 5px 10px 5px gray;
+  font-size: 1.5rem;
+  text-shadow: 5px 10px 5px #d3d3d3;
 }
 
 .nav-link {
+  font-family: "Quicksand-variables";
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -57,152 +63,253 @@ header nav {
   background-color: rgb(255, 255, 255);
 }
 
-main {
-  background-image: url(../images/fondo_negro_10.webp);
-  padding-top: 20px;
-  padding-bottom: 10px;
-  grid-area: main;
-  justify-items: center;
+.mainhome {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  display: grid;
-  grid-template-rows: 0.25r, repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "mainp mainp" "home1 home2" "home3 home4";
+  font-family: "Quicksand-variables";
+  grid-area: main;
+  width: 100%;
+  height: 100%;
 }
-
-.imagenesinicio {
-  width: 450px;
+.mainhome .sectionhome1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/mujer_gimnasio.jpg);
+  backface-visibility: hidden;
+  width: 100%;
+  background-size: cover;
+}
+.mainhome .sectionhome1 div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  width: 400px;
   height: 300px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 150px;
+  margin-left: 100px;
+  margin-bottom: 100px;
 }
-
-.sectionhome1 {
-  grid-area: home1;
-}
-
-.sectionhome2 {
-  grid-area: home2;
-}
-
-.sectionhome3 {
-  grid-area: home3;
-}
-
-.sectionhome4 {
-  grid-area: home4;
-}
-
-.botoninicio, .botonservicios {
-  background-color: black;
+.mainhome .sectionhome1 div h2 {
   color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1rem;
-  position: relative;
-  bottom: 180px;
-  width: 200px;
-  left: 120px;
-  border-bottom-style: solid;
-  padding: 10px 10px;
-  letter-spacing: 0.2cm;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  margin-bottom: 30px;
 }
-.botoninicio:hover, .botonservicios:hover {
-  border-color: white;
+.mainhome .sectionhome1 div p {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+.mainhome .sectionhome1 div a {
+  background-color: #a4161a;
+  color: white;
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-top: 5px;
+  padding: 15px 25px;
+}
+.mainhome .sectionhome1 div a:hover {
+  background-color: #161a1d;
+}
+.mainhome .sectionhome2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.mainhome .sectionhome2 .h2primerrenglon {
+  color: #f5f3f4;
+  margin-top: 30px;
+  font-weight: bolder;
+}
+.mainhome .sectionhome2 .h2segundorenglon {
+  color: #e5383b;
+  margin-bottom: 50px;
+  letter-spacing: 10px;
+  font-weight: bolder;
+}
+.mainhome .sectionhome2 p {
+  color: white;
+  font-size: 1rem;
+}
+.mainhome .sectionhome3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.mainhome .sectionhome3 .divsection3 {
+  color: white;
+  width: 300px;
+  height: 100%;
+}
+.mainhome .sectionhome3 .divsection3 img {
+  width: 300px;
+  height: 300px;
+}
+.mainhome .sectionhome3 .divsection3 a {
+  color: #e5383b;
 }
 
 .mainnosotros {
+  background-color: black;
+  grid-area: main;
+}
+.mainnosotros .section1nosotros {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
-}
-
-.section1nosotros {
-  background-color: rgba(29, 33, 41, 0.7568627451);
+  background-color: #161a1d;
   margin: 10px;
   border-radius: 5%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
   color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Quicksand-variables";
   font-size: 2rem;
 }
-.section1nosotros h2 {
-  text-shadow: 5px 5px 5px gray;
-  margin-bottom: 80px;
+.mainnosotros .section1nosotros article {
+  width: 50%;
 }
-.section1nosotros p {
-  font-size: 24px;
-  margin: 20px;
+.mainnosotros .section1nosotros article h2 {
+  color: #e5383b;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.mainnosotros .section1nosotros article p {
+  font-size: 1rem;
   text-align: justify;
 }
-
-.framenosotros {
-  border: 5px outset gray;
-  margin-right: 10px;
-  margin-left: 10px;
+.mainnosotros .section1nosotros article p a {
+  color: #e5383b;
+}
+.mainnosotros .section1nosotros iframe {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: -10px 20px 15px black;
 }
 
-main {
-  background-image: url(../images/fondo_negro_10.webp);
-  padding-top: 20px;
-  padding-bottom: 10px;
-  grid-area: main;
-  justify-items: center;
+.mainhome {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  display: grid;
-  grid-template-rows: 0.25r, repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "mainp mainp" "home1 home2" "home3 home4";
+  font-family: "Quicksand-variables";
+  grid-area: main;
+  width: 100%;
+  height: 100%;
 }
-
-.imagenesinicio {
-  width: 450px;
+.mainhome .sectionhome1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/mujer_gimnasio.jpg);
+  backface-visibility: hidden;
+  width: 100%;
+  background-size: cover;
+}
+.mainhome .sectionhome1 div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  width: 400px;
   height: 300px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 150px;
+  margin-left: 100px;
+  margin-bottom: 100px;
 }
-
-.sectionhome1 {
-  grid-area: home1;
-}
-
-.sectionhome2 {
-  grid-area: home2;
-}
-
-.sectionhome3 {
-  grid-area: home3;
-}
-
-.sectionhome4 {
-  grid-area: home4;
-}
-
-.botoninicio, .botonservicios {
-  background-color: black;
+.mainhome .sectionhome1 div h2 {
   color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1rem;
-  position: relative;
-  bottom: 180px;
-  width: 200px;
-  left: 120px;
-  border-bottom-style: solid;
-  padding: 10px 10px;
-  letter-spacing: 0.2cm;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  margin-bottom: 30px;
 }
-.botoninicio:hover, .botonservicios:hover {
-  border-color: white;
+.mainhome .sectionhome1 div p {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+.mainhome .sectionhome1 div a {
+  background-color: #a4161a;
+  color: white;
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-top: 5px;
+  padding: 15px 25px;
+}
+.mainhome .sectionhome1 div a:hover {
+  background-color: #161a1d;
+}
+.mainhome .sectionhome2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.mainhome .sectionhome2 .h2primerrenglon {
+  color: #f5f3f4;
+  margin-top: 30px;
+  font-weight: bolder;
+}
+.mainhome .sectionhome2 .h2segundorenglon {
+  color: #e5383b;
+  margin-bottom: 50px;
+  letter-spacing: 10px;
+  font-weight: bolder;
+}
+.mainhome .sectionhome2 p {
+  color: white;
+  font-size: 1rem;
+}
+.mainhome .sectionhome3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.mainhome .sectionhome3 .divsection3 {
+  color: white;
+  width: 300px;
+  height: 100%;
+}
+.mainhome .sectionhome3 .divsection3 img {
+  width: 300px;
+  height: 300px;
+}
+.mainhome .sectionhome3 .divsection3 a {
+  color: #e5383b;
 }
 
 .mainservicios {
+  width: 100%;
+  background-color: black;
+  grid-area: main;
   color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Quicksand-variables";
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -210,29 +317,56 @@ main {
   align-items: center;
 }
 .mainservicios section {
-  background-color: rgba(29, 33, 41, 0.7568627451);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
   margin: 10px;
-  border-radius: 5%;
-  padding: 10px;
 }
-.mainservicios section h2 {
-  text-shadow: 5px 5px 5px gray;
+.mainservicios section div {
+  width: 60%;
+}
+.mainservicios section div h2 {
+  color: #e5383b;
+  margin-top: 10px;
+  margin-bottom: 20px;
   text-align: center;
+  font-weight: bold;
 }
-.mainservicios section p {
+.mainservicios section div p {
   padding-left: 10px;
   text-align: justify;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 .mainservicios section a {
-  text-align: center;
+  background-color: #a4161a;
+  color: white;
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px 50px;
 }
-.mainservicios section a button {
-  object-position: center;
+.mainservicios section a:hover {
+  background-color: #161a1d;
 }
 
-.botonservicios {
-  position: static;
+.sectionservicios1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.788)), url(../images/entrenamiento_presencial.jpg);
+  background-size: cover;
+}
+
+.sectionservicios2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.788)), url(../images/entrenamiento_online.jpg);
+  background-size: cover;
+}
+
+.sectionservicios3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.788)), url(../images/tienda_de_rutinas_servicios.jpg);
+  background-size: cover;
 }
 
 .mainrutinas {
@@ -334,23 +468,24 @@ form {
 }
 
 footer {
-  border-top: 1px solid gray;
   background-color: black;
   grid-area: footer;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
 footer p {
   color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Quicksand-variables";
   padding-top: 5px;
 }
-
-.imgfooter {
+footer .imgfooter {
   width: 30px;
   height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 @media (max-width: 928px) and (min-width: 712px) {
@@ -358,7 +493,7 @@ footer p {
     width: 350px;
     height: 250px;
   }
-  .botoninicio, .botonservicios {
+  .botoninicio {
     bottom: 160px;
     left: 75px;
     border-bottom-style: solid;
@@ -384,7 +519,7 @@ footer p {
     width: 500px;
     height: 300px;
   }
-  .botoninicio, .botonservicios {
+  .botoninicio {
     bottom: 180px;
     width: 300px;
     left: 90px;
@@ -423,7 +558,7 @@ footer p {
     width: 320px;
     height: 300px;
   }
-  .botoninicio, .botonservicios {
+  .botoninicio {
     bottom: 180px;
     width: 160px;
     left: 90px;
