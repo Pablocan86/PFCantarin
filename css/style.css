@@ -99,7 +99,7 @@ main {
 }
 .mainhome .sectionhome1 div h2 {
   color: white;
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: bold;
   letter-spacing: 0.5px;
   word-spacing: 1px;
@@ -145,6 +145,9 @@ main {
 .mainhome .sectionhome2 p {
   color: white;
   font-size: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
 }
 .mainhome .sectionhome3 {
   display: flex;
@@ -238,7 +241,7 @@ main {
 }
 .mainhome .sectionhome1 div h2 {
   color: white;
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: bold;
   letter-spacing: 0.5px;
   word-spacing: 1px;
@@ -284,6 +287,9 @@ main {
 .mainhome .sectionhome2 p {
   color: white;
   font-size: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
 }
 .mainhome .sectionhome3 {
   display: flex;

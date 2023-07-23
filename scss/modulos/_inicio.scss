@@ -7,11 +7,12 @@
     grid-area: main;
     width: 100%;
  
-    .sectionhome1 {background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../images/mujer_gimnasio.jpg);
+    .sectionhome1 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../images/mujer_gimnasio.jpg);
         backface-visibility: hidden;
         width: 100%;
         background-size: cover;
-        
+
         div {
             @include flexbox (column, wrap, center, start,);
             width: 400px;
@@ -22,7 +23,7 @@
 
             h2 {
                 color:white; 
-                font-size: 2.5rem; 
+                font-size: 40px; 
                 font-weight: bold;
                 letter-spacing: 0.5px;
                 word-spacing: 1px;  
@@ -73,6 +74,9 @@
         p {
             color: white;
             font-size: 1rem;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
         }
     }
     .sectionhome3 {
@@ -98,6 +102,6 @@
 
         
     }
-
 }
+
 
