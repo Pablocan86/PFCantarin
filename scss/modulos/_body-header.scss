@@ -5,12 +5,13 @@
 }
 
 body { 
+    width: 100%;
+    height: 100vh;
     display: grid;
-    grid-template-rows: 3fr, repeat(2, 2fr), 0.5fr;
+    grid-template-rows: 1fr, 2fr, 1fr;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "header header"
-    "main main"
     "main main"
     "footer footer";}
    
@@ -65,5 +66,8 @@ header {
     background-color:rgb(255, 255, 255);    
 }
 
+main {
+    width: 100%;
+}
 
 

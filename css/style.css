@@ -9,10 +9,12 @@
 }
 
 body {
+  width: 100%;
+  height: 100vh;
   display: grid;
-  grid-template-rows: 3fr, repeat(2, 2fr), 0.5fr;
+  grid-template-rows: 1fr, 2fr, 1fr;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "header header" "main main" "main main" "footer footer";
+  grid-template-areas: "header header" "main main" "footer footer";
 }
 
 header {
@@ -63,6 +65,10 @@ header nav {
   background-color: rgb(255, 255, 255);
 }
 
+main {
+  width: 100%;
+}
+
 .mainhome {
   display: flex;
   flex-direction: column;
@@ -72,7 +78,6 @@ header nav {
   font-family: "Quicksand-variables";
   grid-area: main;
   width: 100%;
-  height: 100%;
 }
 .mainhome .sectionhome1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/mujer_gimnasio.jpg);
@@ -154,7 +159,6 @@ header nav {
 .mainhome .sectionhome3 .divsection3 {
   color: white;
   width: 300px;
-  height: 100%;
 }
 .mainhome .sectionhome3 .divsection3 img {
   width: 300px;
@@ -165,6 +169,7 @@ header nav {
 }
 
 .mainnosotros {
+  width: 100%;
   background-color: black;
   grid-area: main;
 }
@@ -212,7 +217,6 @@ header nav {
   font-family: "Quicksand-variables";
   grid-area: main;
   width: 100%;
-  height: 100%;
 }
 .mainhome .sectionhome1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/mujer_gimnasio.jpg);
@@ -294,7 +298,6 @@ header nav {
 .mainhome .sectionhome3 .divsection3 {
   color: white;
   width: 300px;
-  height: 100%;
 }
 .mainhome .sectionhome3 .divsection3 img {
   width: 300px;
@@ -370,104 +373,164 @@ header nav {
 }
 
 .mainrutinas {
+  width: 100%;
+  grid-area: main;
+  background-color: black;
+  font-family: "Quicksand-variables";
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.mainrutinas h2 {
-  background-color: rgba(29, 33, 41, 0.7568627451);
+.mainrutinas section {
+  width: 100%;
+  margin: 10px 10px;
+  border-radius: 10px;
+  background-color: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainrutinas section h2 {
+  background-color: #161a1d;
+  width: 100%;
+  color: #e5383b;
+  font-weight: bold;
+  text-align: center;
   margin-top: 15px;
   padding: 10px;
-  border-radius: 5%;
-  text-shadow: 5px 5px 5px gray;
 }
-
-.bodyrutinas {
-  display: grid;
-  grid-template-rows: 1, 0.2fr, repeat(1, 4fr) 0.2fr;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "header header" "nav nav" "main main" "footer footer";
-}
-
-.imgrutinas {
-  border-radius: 5%;
-}
-
-.carousel-inner {
-  position: relative;
-  left: 15%;
-  width: 70%;
-  overflow: hidden;
-}
-
-.maincontacto {
+.mainrutinas section article {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
+}
+.mainrutinas section article div {
+  background-color: #161a1d;
+  width: 300px;
+  height: 300px;
+  margin: 10px 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: -10px 20px 15px black;
+}
+.mainrutinas section article div figure {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+}
+.mainrutinas section article div figure:hover figcaption {
+  display: block;
+}
+.mainrutinas section article div figure img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.mainrutinas section article div figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.438);
+  font-size: 2rem;
+  text-align: center;
+  display: none;
+}
+.mainrutinas section article div figure figcaption a {
+  text-decoration: none;
+}
+.mainrutinas section article div figure figcaption a p {
+  color: rgba(255, 255, 255, 0.959);
+  font-weight: bold;
+  margin-top: 80px;
+}
+.mainrutinas section article div h4 {
+  background-color: #e5383b;
+  font-size: 1.2rem;
+  color: #d3d3d3;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.mainrutinas section article div p {
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-form {
-  font-family: "Lucida Sans", sans-serif;
+.maincontacto {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/nosotros.webp);
+  background-size: cover;
+  grid-area: main;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.maincontacto form {
+  font-family: "Quicksand-variables";
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(29, 33, 41, 0.7568627451);
   border-radius: 5%;
   margin-bottom: 10px;
   padding: 10px 50px 10px 50px;
 }
-
-.form-control {
+.maincontacto form .form-control {
   width: 400px;
 }
-
-.framecontacto {
-  width: 600px;
-  height: 450px;
-  border-radius: 5%;
-  margin: 10px;
-}
-
-.btnsform {
+.maincontacto form .btnsform {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
-.botoncontacto {
-  background-color: black;
+.maincontacto form .botoncontacto {
+  background-color: #a4161a;
   color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1rem;
-  position: relative;
-  bottom: 180px;
-  width: 200px;
-  left: 120px;
-  border-bottom-style: solid;
-  padding: 10px 10px;
-  letter-spacing: 0.2cm;
-  position: static;
-  margin-bottom: 10px;
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-top: 5px;
+  padding: 15px 25px;
 }
-.botoncontacto:hover {
-  border-color: white;
+.maincontacto form .botoncontacto:hover {
+  background-color: #161a1d;
 }
-
-.modal-content {
-  transform: translate(0px, 250px);
+.maincontacto form .modal-content {
+  transform: translate(0px, 200px);
   display: flex;
   flex-direction: column;
   width: 100%;
   color: white;
   background-color: rgba(29, 33, 41, 0.7568627451);
 }
-
-.btn-close {
+.maincontacto form .modal-content .btn-close {
   --bs-btn-close-bg: url(https://clipground.com/images/white-x-png-5.png);
+}
+.maincontacto .framecontacto {
+  width: 500px;
+  height: 400px;
+  border-radius: 20px;
+  margin: 10px;
 }
 
 footer {
+  width: 100%;
+  height: 100%;
   background-color: black;
   grid-area: footer;
   display: flex;
@@ -488,50 +551,13 @@ footer .imgfooter {
   margin-right: 10px;
 }
 
-@media (max-width: 928px) and (min-width: 712px) {
-  .imagenesinicio {
-    width: 350px;
-    height: 250px;
-  }
-  .botoninicio {
-    bottom: 160px;
-    left: 75px;
-    border-bottom-style: solid;
-    padding: 10px 10px;
-    letter-spacing: 0.2cm;
-  }
-}
 @media (max-width: 768px) and (min-width: 576px) {
   header {
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-  }
-}
-@media (max-width: 712px) and (min-width: 510px) {
-  main {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: 1fr;
-    grid-template-areas: "home1" "home2" "home3" "home4";
-  }
-  .imagenesinicio {
-    width: 500px;
-    height: 300px;
-  }
-  .botoninicio {
-    bottom: 180px;
-    width: 300px;
-    left: 90px;
-    border-bottom-style: solid;
-    padding: 10px 10px;
-    letter-spacing: 0.2cm;
-  }
-}
-@media (max-width: 712px) and (min-width: 320px) {
-  .mainnosotros {
-    flex-direction: column;
-    flex-wrap: nowrap;
   }
 }
 @media (max-width: 630px) and (min-width: 200px) {
@@ -548,46 +574,35 @@ footer .imgfooter {
     height: 200px;
     padding-left: 10px;
   }
-  main {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: 1fr;
-    grid-template-areas: "home1" "home2" "home3" "home4";
+  .mainhome .sectionhome1 .div1inicio {
+    width: 270px;
+    height: 250px;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-bottom: 100px;
   }
-  .imagenesinicio {
-    width: 320px;
-    height: 300px;
-  }
-  .botoninicio {
-    bottom: 180px;
-    width: 160px;
-    left: 90px;
-    border-bottom-style: solid;
-    padding: 10px 10px;
-    letter-spacing: 0.2cm;
-  }
-  .botonservicios {
-    background-color: black;
+  .mainhome .sectionhome1 .div1inicio h2 {
     color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 1rem;
-    position: relative;
-    bottom: 180px;
-    width: 200px;
-    left: 120px;
-    border-bottom-style: solid;
-    padding: 10px 10px;
-    letter-spacing: 0.2cm;
-    position: static;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    margin-bottom: 30px;
   }
-  .form-control {
-    width: 100%;
+  .mainhome .sectionhome1 .div1inicio p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 30px;
   }
-  .btnsform {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+}
+form .form-control {
+  width: 100%;
+}
+
+form .btnsform {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
