@@ -105,16 +105,6 @@
             }
         }
         
-          
-        form .form-control {
-        width: 100%;
-        }
-
-        form .btnsform {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;        
-        }
         .mainservicios section div {
             width: 100%;
 
@@ -123,6 +113,21 @@
                 margin-right: 10px;
             }
         }
+        
+        .maincontacto form {
+            
+            .form-control {
+                width: 375px;
+            }
+            
+            .btnsform {
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;        
+            } 
+        }
+    
+            
     }
 
 @media (max-width: 400px) and (min-width: 320px) {
@@ -133,6 +138,19 @@
         
         .mainservicios section div {
             width: 100%;
+        }
+
+        .maincontacto form {
+            
+            .form-control {
+                width: 300px;
+            }
+            
+            .btnsform {
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;        
+            } 
         }
     }
 

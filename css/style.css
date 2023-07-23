@@ -489,13 +489,15 @@ main {
   color: white;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  border-radius: 5%;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
-  padding: 10px 50px 10px 50px;
 }
 .maincontacto form .form-control {
-  width: 400px;
+  width: 500px;
 }
 .maincontacto form .btnsform {
   display: flex;
@@ -510,6 +512,8 @@ main {
   border: 1px solid black;
   text-decoration: none;
   border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-top: 5px;
   padding: 15px 25px;
 }
@@ -615,20 +619,20 @@ footer .imgfooter {
     color: white;
     margin-bottom: 30px;
   }
-  form .form-control {
-    width: 100%;
-  }
-  form .btnsform {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .mainservicios section div {
     width: 100%;
   }
   .mainservicios section div p {
     margin-left: 10px;
     margin-right: 10px;
+  }
+  .maincontacto form .form-control {
+    width: 375px;
+  }
+  .maincontacto form .btnsform {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 400px) and (min-width: 320px) {
@@ -638,6 +642,14 @@ footer .imgfooter {
   }
   .mainservicios section div {
     width: 100%;
+  }
+  .maincontacto form .form-control {
+    width: 300px;
+  }
+  .maincontacto form .btnsform {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 
