@@ -184,7 +184,7 @@ main {
   align-items: center;
   background-color: #161a1d;
   margin: 10px;
-  border-radius: 5%;
+  border-radius: 10px;
   color: white;
   font-family: "Quicksand-variables";
   font-size: 2rem;
@@ -604,32 +604,40 @@ footer .imgfooter {
   }
   .mainhome .sectionhome1 .div1inicio h2 {
     color: white;
-    font-size: 1.6rem;
     font-weight: bold;
-    letter-spacing: 0.5px;
+    font-size: 1.6rem;
     word-spacing: 1px;
+    letter-spacing: 0.5px;
     margin-bottom: 30px;
   }
   .mainhome .sectionhome1 .div1inicio p {
-    color: white;
     font-size: 16px;
+    color: white;
     margin-bottom: 30px;
   }
+  form .form-control {
+    width: 100%;
+  }
+  form .btnsform {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainservicios section div {
+    width: 100%;
+  }
+  .mainservicios section div p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
-form .form-control {
-  width: 100%;
-}
-
-form .btnsform {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 @media (max-width: 400px) and (min-width: 320px) {
   .mainnosotros .section1nosotros iframe {
     width: 200px;
     height: 300px;
+  }
+  .mainservicios section div {
+    width: 100%;
   }
 }
 

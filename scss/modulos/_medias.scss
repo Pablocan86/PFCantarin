@@ -83,44 +83,56 @@
    }
 
    .mainhome .sectionhome1 .div1inicio{
-                width: 270px;
-                height: 250px;
-                margin-top: 150px;
-                margin-left: 50px;
-                margin-bottom: 100px;
+        width: 270px;
+        height: 250px;
+        margin-top: 150px;
+        margin-left: 50px;
+        margin-bottom: 100px;
 
-                h2 {
-                color:white; 
-                font-size: 1.6rem; 
-                font-weight: bold;
-                letter-spacing: 0.5px;
-                word-spacing: 1px;  
-                margin-bottom: 30px; 
-                }    
+        h2 {
+            color:white; 
+            font-weight: bold;
+            font-size: 1.6rem; 
+            word-spacing: 1px;  
+            letter-spacing: 0.5px;
+            margin-bottom: 30px; 
+        }    
                 
-                p {
-                color:white;
-                font-size: 16px;
-                margin-bottom: 30px;
-                }
+        p {
+            font-size: 16px;
+            color:white;
+            margin-bottom: 30px;
             }
         }
-
-    form .form-control {
+        
+          
+        form .form-control {
         width: 100%;
-    }
+        }
 
-    form .btnsform {
+        form .btnsform {
         flex-direction: column;
         justify-content: center;
         align-items: center;        
+        }
+        .mainservicios section div {
+            width: 100%;
+
+            p  {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
     }
 
-    @media (max-width: 400px) and (min-width: 320px) {
+@media (max-width: 400px) and (min-width: 320px) {
         .mainnosotros .section1nosotros iframe {
             width: 200px;
-            height: 300px;
-
+            height: 300px;        
+        }
+        
+        .mainservicios section div {
+            width: 100%;
         }
     }
 
