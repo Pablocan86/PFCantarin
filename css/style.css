@@ -566,9 +566,24 @@ footer .imgfooter {
     align-items: center;
   }
 }
-@media (max-width: 630px) and (min-width: 200px) {
-  form {
-    padding: 50px 50px;
+@media (max-width: 786px) and (min-width: 320px) {
+  .mainnosotros .section1nosotros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainnosotros .section1nosotros article {
+    width: 100%;
+  }
+  .mainnosotros .section1nosotros article h2 {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .mainnosotros .section1nosotros article p {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 @media (max-width: 510px) and (min-width: 320px) {
@@ -609,6 +624,13 @@ form .btnsform {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 400px) and (min-width: 320px) {
+  .mainnosotros .section1nosotros iframe {
+    width: 200px;
+    height: 300px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
