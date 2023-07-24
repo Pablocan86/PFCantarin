@@ -162,6 +162,7 @@ main {
 .mainhome .sectionhome3 .divsection3 {
   color: white;
   width: 300px;
+  padding-bottom: 10px;
 }
 .mainhome .sectionhome3 .divsection3 img {
   width: 300px;
@@ -304,6 +305,7 @@ main {
 .mainhome .sectionhome3 .divsection3 {
   color: white;
   width: 300px;
+  padding-bottom: 10px;
 }
 .mainhome .sectionhome3 .divsection3 img {
   width: 300px;
@@ -447,7 +449,10 @@ main {
   border-top-left-radius: 5px;
   transition: all 2s;
 }
-.mainrutinas section article div figure figcaption {
+.mainrutinas section article div figure a {
+  text-decoration: none;
+}
+.mainrutinas section article div figure a figcaption {
   position: absolute;
   top: 0;
   left: 0;
@@ -459,13 +464,10 @@ main {
   display: none;
   transition: all 2s;
 }
-.mainrutinas section article div figure figcaption:hover {
+.mainrutinas section article div figure a figcaption:hover {
   font-size: 2rem;
 }
-.mainrutinas section article div figure figcaption a {
-  text-decoration: none;
-}
-.mainrutinas section article div figure figcaption a p {
+.mainrutinas section article div figure a figcaption p {
   color: white;
   font-weight: bold;
   margin-top: 80px;
