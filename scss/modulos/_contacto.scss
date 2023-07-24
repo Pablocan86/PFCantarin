@@ -5,7 +5,7 @@
     background-size: cover;
     grid-area: main;
     @include flexbox (row, wrap, space-evenly, center);
-    
+    width: 100%;
     form {
         font-family: $fuente-pagina;
         color: white;

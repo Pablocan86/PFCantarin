@@ -32,6 +32,8 @@ header nav {
 }
 header h1 {
   text-indent: -9999px;
+  width: 0%;
+  height: 0%;
 }
 
 .imglogo {
@@ -498,6 +500,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
 }
 .maincontacto form {
   font-family: "Quicksand-variables";

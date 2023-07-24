@@ -1,6 +1,5 @@
 @import "../modulos/mixin";
 
-// PANTALLA INICIO
 .mainhome {
     @include flexbox (column, wrap, center, center,);
     font-family:$fuente-pagina;
