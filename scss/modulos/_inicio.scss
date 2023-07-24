@@ -3,7 +3,7 @@
 // PANTALLA INICIO
 .mainhome {
     @include flexbox (column, wrap, center, center,);
-    font-family:"Quicksand-variables";
+    font-family:$fuente-pagina;
     grid-area: main;
     width: 100%;
  

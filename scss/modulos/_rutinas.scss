@@ -21,13 +21,11 @@
             text-align: center;
             margin-top: 15px;
             padding: 10px;
-
         }
 
         article {
             @include flexbox (row, wrap, space-evenly, center,);
             
-        
             div {
                 background-color: $color-gris-oscuro-paleta;
                 width: 300px;
@@ -92,8 +90,7 @@
                 p   {
                     color: white;
                     padding-left: 5px;
-                    padding-right: 5px;
-                    
+                    padding-right: 5px;   
                 }
             
             }
