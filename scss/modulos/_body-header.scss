@@ -27,7 +27,11 @@ header {
     nav {
         background-color: black;
         grid-area: nav;  
-    }    
+    } 
+    
+    h1 {
+        text-indent: -9999px;
+    }
 
 }
 

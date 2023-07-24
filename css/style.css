@@ -30,6 +30,9 @@ header nav {
   background-color: black;
   grid-area: nav;
 }
+header h1 {
+  text-indent: -9999px;
+}
 
 .imglogo {
   width: 300px;
