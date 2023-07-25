@@ -164,16 +164,29 @@ main {
   width: 100%;
   padding-bottom: 20px;
 }
-.mainhome .sectionhome3 .divsection3 {
+.mainhome .sectionhome3 div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+.mainhome .sectionhome3 div .divsection3 {
   color: white;
   width: 300px;
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: start;
 }
-.mainhome .sectionhome3 .divsection3 img {
+.mainhome .sectionhome3 div .divsection3 img {
   width: 300px;
   height: 300px;
 }
-.mainhome .sectionhome3 .divsection3 a {
+.mainhome .sectionhome3 div .divsection3 a {
   color: #e5383b;
 }
 
@@ -307,16 +320,29 @@ main {
   width: 100%;
   padding-bottom: 20px;
 }
-.mainhome .sectionhome3 .divsection3 {
+.mainhome .sectionhome3 div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+.mainhome .sectionhome3 div .divsection3 {
   color: white;
   width: 300px;
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: start;
 }
-.mainhome .sectionhome3 .divsection3 img {
+.mainhome .sectionhome3 div .divsection3 img {
   width: 300px;
   height: 300px;
 }
-.mainhome .sectionhome3 .divsection3 a {
+.mainhome .sectionhome3 div .divsection3 a {
   color: #e5383b;
 }
 
@@ -607,6 +633,20 @@ footer .imgfooter {
   .mainnosotros .section1nosotros article p {
     margin-left: 20px;
     margin-right: 20px;
+  }
+}
+@media (max-width: 600px) and (min-width: 320px) {
+  .mainhome .sectionhome3 div {
+    flex-direction: column;
+    width: 100%;
+  }
+  .mainhome .sectionhome3 div .divsection3 {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+  }
+  .mainhome .sectionhome3 div .divsection3 img {
+    width: 100%;
   }
 }
 @media (max-width: 510px) and (min-width: 320px) {

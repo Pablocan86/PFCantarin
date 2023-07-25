@@ -84,22 +84,28 @@
         width: 100%;
         padding-bottom: 20px;
 
-        .divsection3 {
-            color: white;
-            width: 300px;
-            padding-bottom:10px;
-            
+        div {
+            @include flexbox (row, wrap, space-around,center);
+            width: 50%;
 
-            img {
+            .divsection3 {
+                color: white;
                 width: 300px;
-                height: 300px;
-            }
-            
-            a {
-                color: $color-rojo-paleta;
+                padding-bottom:10px;
+                @include flexbox (column, nowrap, space-between, start);
+
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
                 
+                a {
+                    color: $color-rojo-paleta;       
+                }
             }
         }
+
+        
 
 
         
