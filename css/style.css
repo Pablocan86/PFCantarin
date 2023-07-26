@@ -203,6 +203,12 @@ main {
   background-color: black;
   grid-area: main;
 }
+.mainnosotros .link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .mainnosotros .section1nosotros {
   display: flex;
   flex-direction: row;

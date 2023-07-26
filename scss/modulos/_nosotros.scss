@@ -5,7 +5,12 @@
     background-color: black;
     grid-area: main;
 
-
+    .link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
 .section1nosotros {
     @include flexbox (row, wrap, space-evenly, center);
