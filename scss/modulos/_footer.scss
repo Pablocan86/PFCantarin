@@ -6,6 +6,7 @@ footer {
     grid-area: footer;
     @include flexbox (column, nowrap, center, center,);
 
+    
     p {
     color: white;
     font-family: $fuente-pagina;

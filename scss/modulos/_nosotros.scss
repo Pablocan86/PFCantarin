@@ -4,7 +4,8 @@
     width: 100%;
     background-color: black;
     grid-area: main;
-    
+
+
 
 .section1nosotros {
     @include flexbox (row, wrap, space-evenly, center);
@@ -12,7 +13,7 @@
     margin: 10px;
     border-radius: 10px;
     color: white;
-    font-family: "Quicksand-variables";
+    font-family: $fuente-pagina;
     font-size: 2rem;
     
     article {
@@ -26,10 +27,13 @@
         p {
             font-size: 1rem;
             text-align: justify;
+
             a {
-                color:$color-rojo-paleta;
-            }
+                color: $color-rojo-paleta;
+            }    
+            
         }
+        
     }
 
     iframe {

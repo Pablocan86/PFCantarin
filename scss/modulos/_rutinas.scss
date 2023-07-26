@@ -28,8 +28,7 @@
             width:100%;
             
             div {
-                @include flexbox (row, wrap, space-evenly, center);
-                width: 100%;
+                @include flexbox (row, wrap, space-around, center);
                 
                 div {
                 background-color: $color-gris-oscuro-paleta;
@@ -105,12 +104,13 @@
 
                 .parrafo   {
                     background-color: $color-gris-oscuro-paleta;
-                    width: 90%;
                     color: white;
                     padding-bottom: 10px;
                     padding-left: 5px;
                     padding-right: 5px; 
                     text-align:start;
+                    border-bottom-right-radius: 5px;
+                    border-bottom-left-radius: 5px;
 
                 }
             

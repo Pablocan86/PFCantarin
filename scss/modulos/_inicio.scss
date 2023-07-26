@@ -1,6 +1,7 @@
 @import "../modulos/mixin";
 
 .mainhome {
+    background-color: black;
     @include flexbox (column, wrap, center, center,);
     font-family:$fuente-pagina;
     grid-area: main;
@@ -103,13 +104,10 @@
                     color: $color-rojo-paleta;       
                 }
             }
-        }
-
-        
-
-
-        
+        }    
     }
+
 }
+
 
 

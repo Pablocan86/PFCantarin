@@ -17,6 +17,13 @@ body {
   grid-template-areas: "header header" "main main" "footer footer";
 }
 
+main .linkvolver {
+  width: 100%;
+  font-family: "Quicksand-variables";
+  color: white;
+  text-align: center;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -75,6 +82,7 @@ main {
 }
 
 .mainhome {
+  background-color: black;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -231,6 +239,7 @@ main {
 }
 
 .mainhome {
+  background-color: black;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -454,9 +463,8 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  width: 100%;
 }
 .mainrutinas section article div div {
   background-color: #161a1d;
@@ -523,12 +531,13 @@ main {
 }
 .mainrutinas section article div .parrafo {
   background-color: #161a1d;
-  width: 90%;
   color: white;
   padding-bottom: 10px;
   padding-left: 5px;
   padding-right: 5px;
   text-align: start;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .maincontacto {
@@ -586,6 +595,7 @@ main {
   width: 100%;
   color: white;
   background-color: rgba(29, 33, 41, 0.7568627451);
+  position: absolute;
 }
 .maincontacto form .modal-content .btn-close {
   --bs-btn-close-bg: url(https://clipground.com/images/white-x-png-5.png);
@@ -678,6 +688,8 @@ footer .imgfooter {
     width: 90%;
     text-align: center;
     align-items: center;
+    text-align: justify;
+    margin-top: 10px;
   }
   .mainhome .sectionhome3 div .divsection3 img {
     width: 100%;
@@ -743,6 +755,9 @@ footer .imgfooter {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+  .mainrutinas section article div div {
+    width: 250px;
   }
 }
 

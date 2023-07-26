@@ -14,6 +14,13 @@ body {
     "header header"
     "main main"
     "footer footer";}
+
+    main .linkvolver {
+        width: 100%;
+        font-family: $fuente-pagina;
+        color: white;
+        text-align: center;
+    }
    
 header {   
     width: 100%;
@@ -23,6 +30,7 @@ header {
     justify-content: space-between;
     background-color: black;
     grid-area: header;
+    
     
     nav {
         background-color: black;
@@ -74,6 +82,7 @@ header {
 
 main {
     width: 100%;
+
 }
 
 

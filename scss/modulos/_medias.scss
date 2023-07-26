@@ -17,10 +17,11 @@
                 margin-top: 120px;
             }
 
-        }
-            
+                 
     }
-}           
+}
+}  
+
 
 
 @media (max-width: 768px) and (min-width: 576px){
@@ -57,6 +58,8 @@
             width: 90%;
             text-align: center;
             align-items: center;
+            text-align: justify;
+            margin-top: 10px;
 
             img {
                 width:100%;
@@ -146,6 +149,10 @@
                 justify-content: center;
                 align-items: center;        
             } 
+        }
+
+        .mainrutinas section article div div {
+            width: 250px;
         }
     }
 
