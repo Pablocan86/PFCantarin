@@ -6,6 +6,7 @@
     grid-area: main;
     @include flexbox (row, wrap, space-evenly, center);
     width: 100%;
+    background-attachment: fixed;
     form {
         font-family: $fuente-pagina;
         color: white;

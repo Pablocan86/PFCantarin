@@ -556,6 +556,7 @@ main {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  background-attachment: fixed;
 }
 .maincontacto form {
   font-family: "Quicksand-variables";

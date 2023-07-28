@@ -14,6 +14,7 @@
         @include flexbox (row, wrap, space-around, center,);
         border-radius: 10px;
         margin: 10px;
+        
             
         div {
             width: 60%;
@@ -53,6 +54,7 @@
     .sectionservicios1 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.788),rgba(0, 0, 0, 0.788)), url(../images/entrenamiento_presencial.webp);
         background-size:cover;
+        
     }
     .sectionservicios2 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.788),rgba(0, 0, 0, 0.788)), url(../images/entrenamiento_online.webp);
