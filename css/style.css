@@ -702,6 +702,9 @@ footer .imgfooter {
     margin-left: 20px;
     margin-right: 20px;
   }
+  .mainnosotros .section1nosotros article .parrafonosotros {
+    text-align: center;
+  }
 }
 @media (max-width: 660px) and (min-width: 480px) {
   .mainrutinas section article div div {
