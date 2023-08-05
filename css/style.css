@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Quicksand-variables";
-  src: url(../fonts/Quicksand-VariableFont_wght.ttf);
+  src: url(../assets/fonts/Quicksand-VariableFont_wght.ttf);
 }
 * {
   margin: 0;
@@ -93,7 +93,7 @@ main {
   width: 100%;
 }
 .mainhome .sectionhome1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/mujer_gimnasio.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/mujer_gimnasio.webp);
   backface-visibility: hidden;
   width: 100%;
   background-size: cover;
@@ -256,7 +256,7 @@ main {
   width: 100%;
 }
 .mainhome .sectionhome1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/mujer_gimnasio.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/mujer_gimnasio.webp);
   backface-visibility: hidden;
   width: 100%;
   background-size: cover;
@@ -412,17 +412,17 @@ main {
 }
 
 .sectionservicios1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.788)), url(../images/entrenamiento_presencial.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.788)), url(../assets/images/entrenamiento_presencial.webp);
   background-size: cover;
 }
 
 .sectionservicios2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.788)), url(../images/entrenamiento_online.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.788)), url(../assets/images/entrenamiento_online.webp);
   background-size: cover;
 }
 
 .sectionservicios3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.788)), url(../images/tienda_de_rutinas_servicios.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.788)), url(../assets/images/tienda_de_rutinas_servicios.webp);
   background-size: cover;
 }
 
@@ -547,7 +547,7 @@ main {
 }
 
 .maincontacto {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/nosotros.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/nosotros.webp);
   background-size: cover;
   grid-area: main;
   display: flex;

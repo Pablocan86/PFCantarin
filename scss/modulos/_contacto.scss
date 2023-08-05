@@ -1,7 +1,7 @@
 @import "../modulos/mixin";
 
 .maincontacto {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.600),(rgba(0, 0, 0, 0.600))),url(../images/nosotros.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.600),(rgba(0, 0, 0, 0.600))),url(../assets/images/nosotros.webp);
     background-size: cover;
     grid-area: main;
     @include flexbox (row, wrap, space-evenly, center);
